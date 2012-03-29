@@ -90,7 +90,7 @@ Mac OS X:
 
 Debian/Ubuntu:
 
-    $ sudo apt-get install xulrunner-1.9-dev
+    $ sudo apt-get install xulrunner-1.9.2-dev
 
 Gentoo:
 
@@ -116,6 +116,12 @@ If you want to build with the system spidermonkey library, replace the build
 command with the following:
 
     $ python setup.py --system-library build
+
+Mac OSX 10.7.x (Lion)
+---------------------
+If you want to install python-spidermoney on a Mac running OSX 10.7.x (Lion) then you need to make sure you follow the directions above, but also make sure that you have set the ARCHFLAGS to i386 or else it might not build correctly.
+
+    $ export ARCHFLAGS="-arch i386"
 
 Examples
 ========
